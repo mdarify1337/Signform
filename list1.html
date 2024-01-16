@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .intra-button {
+      background-color: #1C1C1C;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 25px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .intra-button:hover {
+      background-color: #1C1C1C;
+      opacity: 0.9;
+    }
+
+    .intra-button:focus {
+      /* ring: 4; */
+      outline: none;
+    }
+
+    .intra-button svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    .dark-mode .intra-button {
+      background-color: #000000;
+    }
+
+    .dark-mode .intra-button:hover {
+      background-color: #000000;
+      opacity: 0.7;
+    }
+
+    .intra-button img {
+      width: 25px;
+      height: 25px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <button class="intra-button" onclick="signWithGithub()">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF"  viewBox="0 0 20 20">
+        <img fill-rule="evenodd" src="/client/src/42.jpeg" class="intra-button" clip-rule="evenodd" alt="">
+    </svg>
+    Sign in with Intra42
+  </button>
+</body>
+</html>

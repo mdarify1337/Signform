@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link
+	  rel="stylesheet"
+	  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	/>
+	<style>
+	  * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	  }
+	  .container {
+		position: relative;
+		background-color: rgb(74, 92, 92);
+		height: 700px;
+		width: 450px;
+		margin: 100px auto;
+		border-radius: 15px;
+		padding: 20px 20px;
+	  }
+	  .user-img {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		/* margin: 15% 45%; */
+		margin: 50px 50px;
+	  }
+	  #photo {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		transform: translateX(75%);
+	  }
+	  #file {
+		display: none;
+	  }
+	  #uploadbtn {
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		padding: 6px 6px;
+		border-radius: 50%;
+		cursor: pointer;
+		color: white;
+		transform: translateX(275%);
+		margin-top: 30px;
+		background-color: rgb(173, 172, 172, 0.88);
+		box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+	  }
+
+	  @media screen and (max-width: 400px) {
+		.container {
+		  width: 300px;
+		  padding: 20px 10px;
+		}
+	  }
+
+	  @media screen and (max-width: 500px) {
+		.container {
+		  width: 300px;
+		  padding: 20px 20px;
+		}
+		#uploadbtn,
+		#photo {
+		  transform: translateX(10%);
+		}
+		form {
+		  transform: translateX(10%);
+		}
+	  }
+
+	  @media screen and (max-width: 320px) {
+		.container {
+		  width: 180px;
+		  padding: 20px 10px;
+		}
+		#photo {
+		  transform: translateX(-25%);
+		}
+		#uploadbtn {
+		  transform: translateX(-150%);
+		}
+	  }
+	</style>
+	<script></script>
+  </head>
+  <body>
+	<div class="container">
+		<div class="user-img">
+			<img src="./client/src/42.jpeg" id="photo" />
+			<input type="file" id="file" />
+			<label for="file" id="uploadbtn">
+				<i class="fas fa-camera"></i>
+			</label>
+		</div>
+	</div>
+  </body>
+</html>

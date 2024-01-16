@@ -1,0 +1,90 @@
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.login-section
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #282828;
+}
+.container {
+    position: relative;
+    background-color: rgb(74, 92, 92);
+    height: 700px;
+    width: 900px;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+.container .form_1{
+    position: absolute;
+    left: 2%;
+    top: 23px;
+    width: 47%;
+    height: 650px;
+    background: #fffdfd;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form_1 .form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.form .input{
+    width: 99%;
+    padding: 7px 0px;
+    margin: 5px 0;
+    border: 1px solid #8d8d8d;
+    border-radius:5px ;
+}
+.form .label1{
+    text-align: left ;
+}
+.form .label1:first-child{
+    margin-top: 50px;
+}
+.form .btn_submit{
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 13px;
+    background-color: #d3e6e3;
+    border: none;
+    border-radius: 7px;
+    width: 30%;
+    cursor: pointer;
+}
+.form .btn_submit:hover{
+    color: #fff9f9;
+    background-color: #94beb8;
+}
+
+.container .form_2{
+    position: absolute;
+    right: 2%;
+    top: 23px;
+    width: 47%;
+    height: 650px;
+    border-radius: 13px;
+    background-image: url(/pingpong.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .form_2 .filter{
+    background: linear-gradient(180deg, rgba(121, 255, 36, 0.50) 0%, rgba(217, 217, 217, 0.00) 100%);
+    height: 100%;
+}
+.container .form_2 .title1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}

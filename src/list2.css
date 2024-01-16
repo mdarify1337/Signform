@@ -1,0 +1,13 @@
+.pr_1{
+    height: 500px;
+    width: 90%;
+    margin-right: 10px;  
+    background-color: rgb(48, 58, 197);
+    
+   }
+   .pr_2{
+       height: 500px;
+       width: 90%;
+       margin-left: 10px; 
+       background-color: rgb(55, 213, 176);
+   }
