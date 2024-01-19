@@ -7,8 +7,6 @@ import backgroundImage2 from './intra42.jpej.jpeg';
 
 import bgm from './Leonardo_Diffusion_XL_images_display_a_man_wears_a_jacket_and_0.jpg';
 
-
-
 interface UserForm 
 {
     onSignIn:  
@@ -28,8 +26,8 @@ interface UserForm
 
 interface User 
 {
-  username: string;
   email: string;
+  username: string;
 }
 
 function FunctionSignUpForm()
@@ -73,7 +71,7 @@ function FunctionSignUpForm()
   }
   // const Mp = MyComponent;
   return (
-    <section className={`container forms ${ShowSignUp ? "show-signup" : ""}`}  >
+    <section className={`cont forms}`}  >
       <div className="container2">
         <div className="list1">
           {/* Login Form */}
@@ -115,7 +113,7 @@ function FunctionSignUpForm()
             <div className="media-options">
               <a href="#" className="field intra" style={{backgroundImage: `url(${backgroundImage2})`}} >
                 <img src={Intra} alt="" className="google-img" />
-                <span>Login with Github</span>
+                <span>Login with Intra42</span>
               </a>
             </div>
             <div className="media-options">
@@ -164,7 +162,7 @@ function FunctionSignUpForm()
             <div className="media-options">
               <a href="#" className="field intra" style={{backgroundImage: `url(${backgroundImage2})`}} >
                 <img src={Intra}  alt="" className="google-img" />
-                <span>Login with Github</span>
+                <span>Login with Intra42</span>
               </a>
             </div>
             <div className="media-options">
